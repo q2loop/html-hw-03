@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables and lists</title>
+    <style type="text/css">
+        #sq {
+            list-style-type: square;
+        }
+        #crcl {
+            list-style-type: circle;
+        }
+        #roman {
+            list-style-type: upper-roman;
+        }
+        #low-alpha {
+            list-style-type: lower-alpha;
+        }
+        table {
+            border: 1px solid black;
+            border-spacing: 0px;
+        }
+        td {
+            border: 1px solid black;
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" title="Page 1: Tables and Lists">Tables and lists</a>
+            <a href="forms.html" title="Page 2: Forms (Social Poll)">Forms</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Table, semantic tags, lists</h1>
+        <article>
+            <h2>Table</h2>
+                <table>
+                    <colgroup span="8">
+                    <tr>
+                        <td rowspan="2" colspan="2"></td>
+                        <td rowspan="4" colspan="2"></td>
+                        <td rowspan="8" colspan="3"></td>
+                        <td>1</td>
+                    </tr>
+                    <!--2-->
+                    <tr>
+                        <td>2</td>
+                    </tr>
+                    <!--3-->
+                    <tr>
+                        <td rowspan="2" colspan="2"></td>
+                        <td>3</td>
+                    </tr>
+                    <!--4-->
+                    <tr>
+                        <td>4</td>
+                    </tr>
+                    <!--5-->
+                    <tr>
+                        <td rowspan="4" colspan="4"></td>
+                        <td>5</td>
+                    </tr>
+                    <!--6-->
+                    <tr>
+                        <td>6</td>
+                    </tr>
+                    <!--7-->
+                    <tr>
+                        <td>7</td>
+                    </tr>
+                    <!--8-->
+                    <tr>
+                        <td>8</td>
+                    </tr>
+                    <!--9-->
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td></td>
+                    </tr>
+                </table>
+        <article/>
+        <article>
+            <h2>Lists</h2>
+            <h3>Ordered list</h3>
+            <h4>Decimal (default) numerical markers, reversed list</h4>
+            <ol reversed>
+                <li>First element</li>
+                <li>Second element</li>
+                <li>Third Element</li>
+            </ol>
+            <h4>Roman numerical markers</h4>
+            <ol id='roman'>
+                <li>First element</li>
+                <li>Second element</li>
+                <li>Third Element</li>
+            </ol>
+            <h4>Latin numerical markers</h4>
+            <ol id='low-alpha'>
+                <li>First element</li>
+                <li>Second element</li>
+                <li>Third Element</li>
+            </ol>
+            <h3>Unordered lists</h3>
+            <h4>Disc marker (default)</h4>
+            <ul>
+                <li>First element</li>
+                <li>Second element</li>
+                <li>Third Element</li>
+            </ul>
+            <h4>Square marker</h4>
+            <ul id='sq'>
+                <li>First element</li>
+                <li>Second element</li>
+                <li>Third Element</li>
+            </ul>
+            <h4>Circle marker</h4>
+            <ul id='crcl'>
+                <li>First element</li>
+                <li>Second element</li>
+                <li>Third Element</li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <p>(c) 2017 | xecyc</p>
+    </footer>
+</body>
+</html>

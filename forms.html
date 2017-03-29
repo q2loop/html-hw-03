@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+    <style type="text/css">
+        #foot {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Tables and lists</a>
+            <a href="forms.html">Forms</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Sociological Poll</h2>
+            <form method="POST" action="https://formspree.io/q2loop@gmail.com">
+                <p>
+                    <label>Full name:
+                        <input type="text" name="client-name" placeholder="Name" 
+                        required/>
+                    </label>
+                </p>
+                <p>
+                    <label>Gender: </label>
+                    <label>
+                        <input type="radio" name="gender" value="female"/>
+                        Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="male"/>
+                        Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="other"/>
+                        Other
+                    </label>
+                </p>
+                <p>
+                    <label>Email:
+                        <input type="email" name="user-email" id="user-email" 
+                        placeholder="Email" required/>
+                    </label>
+                </p>
+                <p>
+                    <label>Date of birth:
+                        <input type="date" name="birthdate" required/>
+                    </label>
+                </p>
+                <p>
+                    <label>What social networks are you using:</label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="social" value="fb"/>
+                        Facebook
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="social" value="vk"/>
+                        vk.com
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="social" value="linked"/>
+                        linked.in
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="social" value="github"/>
+                        gitHub
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="social" value="instagram"/>
+                        Instagram
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" name="social" value="none-snw"/>
+                        none
+                    </label>
+                </p>
+                
+                <p>
+                    <label>What is your attitude towards vegetarianism?<br>
+                        <select name="vegetarianism">
+                            <option value="very-neg">very negative</option>
+                            <option value="neg">negative</option>
+                            <option value="neutral">neutral</option>
+                            <option value="positive">positive</option>
+                            <option value="i-am-veg">I am vegetarian</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label>Are you a religious person?<br>
+                        atheist<input type="range" name="religion" min="0" max="5">
+                        very religious
+                    </label>
+                </p>
+                <p>
+                    <label>Please, leave a feedback: <br>
+                        <textarea name="feedback" cols="48" rows="8"> </textarea>
+                    </label>
+                </p>
+                <input type="submit" value="Send">
+                <input type="reset">
+            </form>
+        </article>
+    </main>
+    <footer>
+        <p id="foot">(c) 2017 | xecyc</p>
+    </footer>
+</body>
+</html>
